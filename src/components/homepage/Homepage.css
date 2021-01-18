@@ -1,0 +1,7 @@
+.home-container {
+  display: flex;
+  justify-content: center;
+}
+.home-image {
+  width: 85%;
+}

@@ -1,0 +1,32 @@
+.drink-fixed-image {
+  height: 450px;
+  margin-top: 50px;
+}
+
+.random-container {
+  margin-left: 30px;
+  margin-top: 50px;
+  width: 500px;
+}
+
+.random-container h3 {
+  border-bottom: 1px solid black;
+  margin-top: 0;
+}
+
+.random-container h4 {
+  border-bottom: 1px solid black;
+}
+
+.random-topo {
+  display: flex;
+}
+
+spam {
+  background-color: black;
+  color: #f7f2ee;
+  margin-left: 40px;
+}
+
+.tags {
+}

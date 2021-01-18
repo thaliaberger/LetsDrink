@@ -1,0 +1,29 @@
+.nav-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 20px;
+  width: 460px;
+}
+
+.link {
+  text-decoration: none;
+  color: black;
+  margin: 0 30px;
+  border-bottom: 1px solid #f7f2ee;
+}
+
+.link:hover {
+  border-bottom: 1px solid black;
+}
+
+h1 {
+  font-family: "Fjalla One", sans-serif;
+  margin: 20px 90px 0 90px;
+}
