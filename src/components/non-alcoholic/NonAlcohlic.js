@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import { Link } from "react-router-dom";
 import "./NonAlcoholic.css";
 
 import Navbar from "../navbar/Navbar";
@@ -11,6 +10,9 @@ function NonAlcoholic() {
   const [drinkInfo, setDrinkInfo] = useState({});
   const [display, setDisplay] = useState("drink-info-none");
   const [align, setAlign] = useState("center");
+  const [containerAlign, setContainerAlign] = useState(
+    "alcoholic-container-center"
+  );
 
   useEffect(() => {
     async function fetchData() {
@@ -28,7 +30,14 @@ function NonAlcoholic() {
   function drinkClick(event) {
     setDrinkId(event.target.id);
     setDisplay("drink-info-block");
+    setContainerAlign("alcoholic-container-start");
     setAlign("start");
+  }
+
+  function Close() {
+    setDisplay("drink-info-none");
+    setContainerAlign("alcoholic-container-center");
+    setAlign("center");
   }
 
   useEffect(() => {
@@ -49,7 +58,7 @@ function NonAlcoholic() {
     <div>
       <Navbar />
       <div className={align}>
-        <div className="alcoholic-container">
+        <div className={containerAlign}>
           {state ? (
             state.map((drink) => (
               <div onClick={drinkClick} className="each-drink">
@@ -68,12 +77,19 @@ function NonAlcoholic() {
         <div className={display}>
           {drinkInfo ? (
             <div className="drink-info">
+              <p className="close-info" onClick={Close}>
+                x
+              </p>
               <h4>{drinkInfo.strDrink}</h4>
               <p>Ingredients:</p>
               <ul>
                 <li>{drinkInfo.strIngredient1}</li>
                 <li>{drinkInfo.strIngredient2}</li>
-                <li>{drinkInfo.strIngredient3}</li>
+                {drinkInfo.strIngredient3 ? (
+                  <li>{drinkInfo.strIngredient3}</li>
+                ) : (
+                  <></>
+                )}
               </ul>
 
               <p>Instructions: {drinkInfo.strInstructions}</p>

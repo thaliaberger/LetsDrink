@@ -53,8 +53,7 @@
   background-color: #f7f2ee;
   font-size: 1.1em;
   border: 1px solid black;
-  padding: 0 10px;
-  height: 42.5px;
+  padding: 9px;
   font-family: "Raleway", sans-serif;
 }
 
@@ -66,8 +65,17 @@
   display: block;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  gap: 30px 0;
+  gap: 30px 80px;
   justify-items: center;
+  margin: 60px 0;
+}
+
+.search-display-start {
+  display: block;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 30px 50px;
+  justify-items: end;
   margin: 60px 0;
 }
 

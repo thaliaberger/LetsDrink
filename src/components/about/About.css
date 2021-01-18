@@ -1,0 +1,13 @@
+.about {
+  display: flex;
+  justify-content: center;
+  margin-top: 200px;
+}
+
+.about a {
+  font-weight: bold;
+  color: black;
+  border-bottom: 2px solid black;
+  text-decoration: none;
+  margin-left: 5px;
+}

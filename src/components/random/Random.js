@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import { Link } from "react-router-dom";
 import "./Random.css";
 
 import Navbar from "../navbar/Navbar";
@@ -51,7 +50,7 @@ function Random() {
           <ul>
             <li>{state.strIngredient1}</li>
             <li>{state.strIngredient2}</li>
-            <li>{state.strIngredient3}</li>
+            {state.strIngredient3 ? <li>{state.strIngredient3}</li> : <></>}
           </ul>
           <h4>Instructions</h4>
           <p>{state.strInstructions}</p>
