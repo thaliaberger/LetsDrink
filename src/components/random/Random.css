@@ -28,5 +28,38 @@ spam {
   margin-left: 40px;
 }
 
-.tags {
+/* RESPONSIVIDADE */
+
+@media screen and (max-width: 1000px) {
+  .drink-fixed-image {
+    height: 400px;
+  }
+
+  .random-container {
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .drink-fixed-image {
+    height: 300px;
+  }
+
+  .random-container {
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .random-topo {
+    flex-direction: column;
+  }
+
+  spam {
+    margin-left: 0;
+  }
+
+  .drink-fixed-image {
+    display: none;
+  }
 }

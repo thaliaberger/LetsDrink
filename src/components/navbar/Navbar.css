@@ -27,3 +27,21 @@ h1 {
   font-family: "Fjalla One", sans-serif;
   margin: 20px 90px 0 90px;
 }
+
+@media screen and (max-width: 1200px) {
+  .nav-container {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .link {
+    margin: 0 20px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .link {
+    margin: 0 10px;
+  }
+}

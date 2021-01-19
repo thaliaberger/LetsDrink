@@ -82,3 +82,70 @@
 .search-button-none {
   display: none;
 }
+
+/* RESPONSIVIDADE */
+
+@media screen and (max-width: 1200px) {
+  .search-display-block {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .search-display-start {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .search-display-block {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .search-display-start {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .search-container img {
+    width: 500px;
+  }
+
+  .search-input {
+    width: 310px;
+  }
+
+  .search-display-block {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .search-display-start {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .search-container img {
+    width: 400px;
+  }
+
+  .search-input {
+    width: 210px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .search-container img {
+    width: 300px;
+  }
+
+  .search-input {
+    width: 110px;
+  }
+  .search-display-block {
+    grid-template-columns: 1fr;
+  }
+
+  .search-display-start {
+    grid-template-columns: 1fr;
+  }
+}

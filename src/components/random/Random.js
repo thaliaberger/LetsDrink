@@ -25,7 +25,7 @@ function Random() {
   return (
     <div>
       <Navbar />
-      <div className="center">
+      <div className="center column">
         <div>
           <img className="drink-fixed-image" src={drink} />
         </div>

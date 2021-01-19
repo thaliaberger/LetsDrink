@@ -68,4 +68,129 @@
   border-bottom: 1px solid black;
 }
 
-/* OVERLAY */
+/* RESPONSIVIDADE */
+
+@media screen and (max-width: 1200px) {
+  .alcoholic-container-center {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 60px 80px;
+    margin: 60px 0;
+  }
+
+  .alcoholic-container-start {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 60px 50px;
+    margin: 60px 40px;
+  }
+
+  .drink-info-block {
+    position: absolute;
+    position: fixed;
+    right: 50%;
+    margin-right: -200px;
+    width: 400px;
+  }
+
+  .drink-info {
+    width: 400px;
+  }
+
+  .alcoholic-container-start {
+    gap: 60px 80px;
+    margin: 60px 0;
+  }
+
+  .start {
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .alcoholic-container-center {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .alcoholic-container-start {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .drink-info-block {
+    position: absolute;
+    position: fixed;
+    right: 50%;
+    margin-right: -200px;
+    width: 400px;
+  }
+
+  .drink-info {
+    width: 400px;
+  }
+
+  .alcoholic-container-start {
+    gap: 60px 80px;
+    margin: 60px 0;
+  }
+  .start {
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .alcoholic-container-center {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .alcoholic-container-start {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .drink-info-block {
+    position: absolute;
+    position: fixed;
+    right: 50%;
+    margin-right: -180px;
+    width: 300px;
+  }
+
+  .drink-info {
+    width: 300px;
+  }
+
+  .alcoholic-container-start {
+    gap: 60px 80px;
+    margin: 60px 0;
+  }
+  .start {
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .alcoholic-container-center {
+    grid-template-columns: 1fr;
+  }
+
+  .alcoholic-container-start {
+    grid-template-columns: 1fr;
+  }
+
+  .drink-info-block {
+    position: absolute;
+    position: fixed;
+    right: 50%;
+    margin-right: -100px;
+    width: 200px;
+  }
+
+  .drink-info {
+    width: 200px;
+  }
+
+  .alcoholic-container-start {
+    gap: 60px 80px;
+    margin: 60px 0;
+  }
+  .start {
+    margin-right: 0;
+  }
+}

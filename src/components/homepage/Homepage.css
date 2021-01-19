@@ -5,3 +5,9 @@
 .home-image {
   width: 80%;
 }
+
+@media screen and (max-width: 800px) {
+  .home-image {
+    margin-top: 150px;
+  }
+}

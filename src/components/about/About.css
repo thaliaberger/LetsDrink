@@ -1,6 +1,7 @@
 .about {
   display: flex;
   justify-content: center;
+  align-items: center;
   margin-top: 200px;
 }
 
@@ -10,4 +11,16 @@
   border-bottom: 2px solid black;
   text-decoration: none;
   margin-left: 5px;
+}
+
+@media screen and (max-width: 600px) {
+  .about {
+    width: 250px;
+    flex-direction: column;
+  }
+
+  .about-container {
+    display: flex;
+    justify-content: center;
+  }
 }
